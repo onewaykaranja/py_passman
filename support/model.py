@@ -72,3 +72,4 @@ def get_password_from_id(master_key, conn, id):
     for row in data:
         if row[0] == int(id):
             return decrypt(master_key, row[3])
+            
